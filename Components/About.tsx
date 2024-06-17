@@ -2,21 +2,28 @@ import React from 'react'
 import Image from 'next/image'
 const About = () => {
   return (
-    <div className='flex w-screen h-screen '>
-      <div>
-        <div><Image src="/man.png"
+    <div className='flex pt-[50px] pb-[50px] pl-[50px] pr-[50px] bg-red    h-screen  w-screen  '>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 p-[30px] bg-slate-200 rounded-xl gap-4 '>
+        <div><Image
+        src="/1.jpg"
         alt=""
-        width={100}
-        height={100}/>
+        width={500}
+        height={1500}
+        className='rounded-xl sm:shrink-0 md:shrink-0  ' />
         </div>
-        <div><h1>About </h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit dolore mollitia
-             nesciunt aliquid ratione eligendi distinctio dolorem voluptate atque dolor impedit repudiandae
-             at voluptas, obcaecati animi quisquam id! Minus, possimus!</p></div>
+        <div>
+         <h1 className='font-black text-2xl '>About</h1>
+         <p className='text-slate-600 font-poppins  '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Rerum est veniam vitae aut assumenda, quis eum omnis perferendis dolorem explicabo 
+            reprehenderit inventore eius magnam fugit a labore adipisci maxime sunt? Lorem ipsum 
+            dolor sit amet consectetur adipisicing elit. Odio rem eveniet, fugiat enim in quis ratione 
+            magnam unde quibusdam ipsapraesentium officia quo corporis sapiente! Quam voluptatem consequatur 
+            voluptatibus sapiente.</p>
+        </div>
+
       </div>
     </div>
   )
 }
 
 export default About
-

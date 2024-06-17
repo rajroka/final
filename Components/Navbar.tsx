@@ -1,20 +1,19 @@
 import React from 'react'
-
+import Link from 'next/link'
+import { Input } from 'postcss'
+import { GiBrickWall } from "react-icons/gi";
 const Navbar = () => {
   return (
-    <nav className='flex bg-black text-white ' >
-        <div className='flex w-screen justify-between py-4  px-4 '>
-            <div>
-                logo</div>
-            <div className='flex gap-16 items-center '>
-             <input type="text pla " />
-             <div>About</div>
-             <div>Blogs</div>
-             <div>Contact</div>
-             
-            </div>
-            <div><button className='border-2 px-2 py-2 shadow-neon '>Subscribe</button></div>
-        </div>
+    <nav className='flex bg-black text-white border-2' >
+      <div className='flex w-[100%]   justify-between items-center  py-4  px-4 '>
+        <div><GiBrickWall /></div>
+        <ul className=' hidden md:flex gap-16  '>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Contact</li>
+        </ul>
+        <button className='border-2 px-6  py-2 shadow-neon hidden md:flex rounded-xl hover:text-black hover:bg-white  '>Subscribe</button>
+      </div>
 
     </nav>
   )

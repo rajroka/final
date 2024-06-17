@@ -5,9 +5,10 @@ import { GiAutomaticSas } from "react-icons/gi";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { TiSocialTwitter } from 'react-icons/ti';
+
 const Footer = () => {
     return (
-        <div className='pt-4 pl-4 pr-4 pb-4 bg-green-200  '>
+        <div className='pt-4 z-0 pl-4 pr-4 pb-4 bg-green-200  '>
             <div className='flex  justify-between items-center '>
                 <div className='pl-8'><GiAutomaticSas />
                      <h1 className='text-[20px]' font-bold font-poppins  >Welcome to this website </h1><br />

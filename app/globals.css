@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/MyCustomFont-Regular.woff2') format('woff2'),
+         url('/fonts/MyCustomFont')
+}
+  
