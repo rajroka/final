@@ -1,26 +1,32 @@
 import React from 'react'
 import Image from 'next/image'
+import { Poppins } from 'next/font/google'
 const Herosection = () => {
-    return (
-        <div className='  h-screen   w-screen   p-[50px] bg-black  ' >
-            <div className='grid     lg:grid-cols-2 sm:grid-cols-1  items-center justify-center  '>
-                <div className=' grid gap-[20px]   '>
-                    <h1 className='  text-6xl   font-black text-white    '> YOU ARE JUST A PARTICLE TO THIS WORLD<br />  </h1>
-                    <p className='font-thin text-white  '>Welcome to this website, where you can learn, share, and expore new ideas and knowledge.</p>
-                    <button className='wrap-text border-white border-2 text-white w-[7rem]  '>Subscribe </button></div>
-                <div className=' sm:items-center sm:shrink-0 md:shrink-0 sm:justify-center '>
-                    <Image
-                        src="/dust.gif"
-                        alt="Picture of the author"
-                        width={600}
-                        height={600}
-                        className='bg-blue  rounded-xl'
-                        style={{ backgroundImage: "url('/dust.gif')" }}
-                    />
-                </div>
-            </div>
+  return (
+    <div className='py-[60px] w-screen h-screen '>
+      <div className='px-[40px] md:flex items-center justify-between border-2 border-black '>
+        <div className=' w-1/2  '>
+          <div className='text-wrap ' ><h1 className=' text-3xl font-black justify-around items-center lg:text-6xl  '>You are just a particle </h1>
+            <p className='pt-4  text-silve font-poppins  '>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dix
+              omnis facere impedit aperiam maxime adipisci
+              ducimus minima blanditiis magnam.
+            </p>
+          </div>
+          <div className='pt-6    '><button className='border-2 border-black rounded-lg text-black px-6 py-2 pt-2 hover:bg-black hover:text-white '>Subscribe</button></div>
         </div>
-    )
+        <div className='w-1/2'>
+          <Image
+            src="/il.png"
+            alt=""
+            width={500}
+            height={500}
+            className='pt-6   rounded-xl  ' />
+        </div>
+
+      </div>
+
+    </div>
+  )
 }
 
 export default Herosection
