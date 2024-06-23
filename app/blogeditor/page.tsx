@@ -6,6 +6,7 @@ const UploadBlogs = () => {
   const [description, setdescription] = useState("");
   const [allTitles, setallTitles] = useState([]);
   const [isLoading, setisLoading] = useState(false);
+  const [imageUrl, setimageUrl] = useState("");
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     setisLoading(true);
@@ -17,6 +18,7 @@ const UploadBlogs = () => {
       body: JSON.stringify({
         title,
         description,
+        imageUrl,
       }),
     });
     if (response.ok) {
@@ -77,6 +79,21 @@ const UploadBlogs = () => {
         <div className="flex">
           <div className=" w-[50%]">
             <form onSubmit={handleSubmit}>
+              <div className="mb-5 w-[50%] mt-5">
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">
+                  Add Image Url
+                </label>
+                <input
+                  onChange={(e) => {
+                    setimageUrl(e.target.value);
+                  }}
+                  value={imageUrl}
+                  placeholder="Enter link here"
+                  type="text"
+                  id="base-input"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                />
+              </div>
               <div className="mb-5 w-[50%] mt-5">
                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black">
                   Add Title
