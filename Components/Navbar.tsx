@@ -19,6 +19,7 @@ export default function Navbar() {
       <ul className="hidden md:flex space-x-4 gap-16 ">
         <li><Link href="/" className="hover:underline">Home</Link></li>
         <li><Link href="/blogs" className="hover:underline">Blogs</Link></li>
+        <li><Link href="/blogeditor" className="hover:underline">Upload Blogs</Link></li>
         <li><Link href="#about" className="hover:underline">About</Link></li>
         <li><Link href="/contact" className="hover:underline">Contact</Link></li>
         <li><Link href="/subscribe" className="border-2 py-2 px-6 rounded-lg hover:bg-white hover:text-black">Subscribe</Link></li>
@@ -38,6 +39,7 @@ export default function Navbar() {
             <ul className="md:hidden absolute top-0 left-0 w-full bg-gray-800 text-white py-4 px-8">
               <li><Link href="/" className="block py-2 hover:underline">Home</Link></li>
               <li><Link href="/blogs" className="block py-2 hover:underline">Blogs</Link></li>
+             
               <li><Link href="#about" className="block py-2 hover:underline">About</Link></li>
               <li><Link href="/contact" className="block py-2 hover:underline">Contact</Link></li>
               <li><Link href="/subscribe" className="block py-2 hover:underline">Subscribe</Link></li>
